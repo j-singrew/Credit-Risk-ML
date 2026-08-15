@@ -2,7 +2,7 @@ import os
 import logging
 
 log_file = os.getenv("LOG_FILE_PATH")
-logging.baseConfig(
+logging.basicConfig(
     filename = log_file,
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
